@@ -1,0 +1,13 @@
+aishwarya_dbt_practice:
+  outputs:
+    dev:
+      account: cqxkvog-fx31361
+      database: DBT_TUTORIAL_DEV
+      password: Aishwarya78@snowflake
+      role: ACCOUNTADMIN
+      schema: SOURCE
+      threads: 1
+      type: snowflake
+      user: Aishwarya78
+      warehouse: COMPUTE_WH
+  target: dev
