@@ -1,0 +1,113 @@
+[0m22:49:41.966313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BAA17FE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BAC4F03A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BAC4F0190>]}
+
+
+============================== 22:49:43.411593 | 6a404193-922f-48ad-a76f-f703e30326b6 ==============================
+[0m22:49:43.411593 [info ] [MainThread]: Running with dbt=1.11.9
+[0m22:49:43.558636 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Asus\\.dbt', 'invocation_command': 'dbt init', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:49:47.219154 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Asus\.dbt
+[0m22:50:11.017019 [debug] [MainThread]: Starter project path: C:\aishwarya_dbt\.venv\lib\site-packages\dbt\include\starter_project
+[0m22:50:11.500979 [info ] [MainThread]: 
+Your new dbt project "aishwarya_dbt_practice" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:50:11.516605 [info ] [MainThread]: Setting up your profile.
+[0m22:51:16.338490 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:51:16.338490 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:51:16.354137 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:13:48.778919 [info ] [MainThread]: Profile aishwarya_dbt_practice written to C:\Users\Asus\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:13:48.932793 [debug] [MainThread]: Command `dbt init` succeeded at 23:13:48.932793 after 1447.95 seconds
+[0m23:13:48.948439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BAA17FE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BABBEC700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BABC74640>]}
+[0m23:13:48.948439 [debug] [MainThread]: Flushing usage events
+[0m23:13:50.524005 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:18:22.419029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202C6C1FE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202C7FC4400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202C7FC4190>]}
+
+
+============================== 01:18:22.457553 | c5872db3-3ec9-4251-a91a-bd5798c69ca4 ==============================
+[0m01:18:22.457553 [info ] [MainThread]: Running with dbt=1.11.9
+[0m01:18:22.465729 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Asus\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m01:18:22.946817 [info ] [MainThread]: dbt version: 1.11.9
+[0m01:18:22.962437 [info ] [MainThread]: python version: 3.10.0
+[0m01:18:22.978064 [info ] [MainThread]: python path: C:\aishwarya_dbt\.venv\Scripts\python.exe
+[0m01:18:23.029828 [info ] [MainThread]: os info: Windows-10-10.0.18362-SP0
+[0m01:18:29.315146 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:18:29.315146 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:18:29.315146 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:18:30.036600 [info ] [MainThread]: Using profiles dir at C:\Users\Asus\.dbt
+[0m01:18:30.036600 [info ] [MainThread]: Using profiles.yml file at C:\Users\Asus\.dbt\profiles.yml
+[0m01:18:30.103047 [info ] [MainThread]: Using dbt_project.yml file at C:\aishwarya_dbt\dbt_project.yml
+[0m01:18:30.206097 [info ] [MainThread]: adapter type: snowflake
+[0m01:18:30.229876 [info ] [MainThread]: adapter version: 1.11.4
+[0m01:18:30.229876 [info ] [MainThread]: Configuration:
+[0m01:18:30.247951 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:18:30.261097 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m01:18:30.264153 [info ] [MainThread]: Required dependencies:
+[0m01:18:30.272182 [debug] [MainThread]: Executing "git --help"
+[0m01:18:30.750987 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:18:30.750987 [debug] [MainThread]: STDERR: "b''"
+[0m01:18:30.766625 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:18:30.766625 [info ] [MainThread]: Connection:
+[0m01:18:30.780704 [info ] [MainThread]:   account: FX31361
+[0m01:18:30.780704 [info ] [MainThread]:   user: Aishwarya78
+[0m01:18:30.869074 [info ] [MainThread]:   database: DBT_TUTORIAL_DEV
+[0m01:18:30.881765 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m01:18:30.918664 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m01:18:30.958560 [info ] [MainThread]:   schema: SOURCE
+[0m01:18:30.998210 [info ] [MainThread]:   authenticator: None
+[0m01:18:31.033625 [info ] [MainThread]:   oauth_client_id: None
+[0m01:18:31.070229 [info ] [MainThread]:   query_tag: None
+[0m01:18:31.082006 [info ] [MainThread]:   client_session_keep_alive: False
+[0m01:18:31.113674 [info ] [MainThread]:   host: None
+[0m01:18:31.116162 [info ] [MainThread]:   port: None
+[0m01:18:31.155004 [info ] [MainThread]:   proxy_host: None
+[0m01:18:31.164819 [info ] [MainThread]:   proxy_port: None
+[0m01:18:31.199581 [info ] [MainThread]:   protocol: None
+[0m01:18:31.199581 [info ] [MainThread]:   connect_retries: 1
+[0m01:18:31.269479 [info ] [MainThread]:   connect_timeout: None
+[0m01:18:31.288098 [info ] [MainThread]:   retry_on_database_errors: False
+[0m01:18:31.325481 [info ] [MainThread]:   retry_all: False
+[0m01:18:31.352836 [info ] [MainThread]:   insecure_mode: False
+[0m01:18:31.385633 [info ] [MainThread]:   reuse_connections: True
+[0m01:18:31.400791 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m01:18:31.432958 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m01:18:31.486596 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m01:18:37.486698 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m01:18:53.959402 [debug] [MainThread]: Using snowflake connection "debug"
+[0m01:18:53.959402 [debug] [MainThread]: On debug: select 1 as id
+[0m01:18:53.959402 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:19:01.171067 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m01:19:01.186689 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m01:19:01.186689 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m01:19:01.202308 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m01:19:01.202308 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\aishwarya_dbt\dbt_project.yml> not found
+
+[0m01:19:01.257406 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  290404 (08001): 404 Not Found: post FX31361.snowflakecomputing.com:443/session/v1/login-request
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:19:01.323031 [debug] [MainThread]: Command `dbt debug` failed at 01:19:01.309187 after 39.83 seconds
+[0m01:19:01.323031 [debug] [MainThread]: Connection 'debug' was left open.
+[0m01:19:01.323031 [debug] [MainThread]: On debug: No close available on handle
+[0m01:19:01.331063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202C6C1FE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202CA417940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202CA417910>]}
+[0m01:19:01.331063 [debug] [MainThread]: Flushing usage events
+[0m01:19:02.647521 [debug] [MainThread]: An error was encountered while trying to flush usage events
