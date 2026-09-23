@@ -31,13 +31,19 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   aishwarya_dbt_practice:
-    # Config indicated by + and applies to all files under models/example/
+
     bronze:
       +materialized: table
-      schema: bronze
+      +schema: bronze
+
     silver:
       +materialized: table
-      schema: silver  
+      +schema: silver
+
     gold:
       +materialized: table
-      schema: gold
+      +schema: gold
+
+seeds:
+ aishwarya_dbt_practice:
+  +schema: bronze
