@@ -32,18 +32,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   aishwarya_dbt_practice:
 
-    bronze:
-      +materialized: table
-      +schema: bronze
+    staging:
+      +materialized: view
 
-    silver:
-      +materialized: table
-      +schema: silver
+    intermediate:
+      +materialized: view
 
-    gold:
+    marts:
       +materialized: table
-      +schema: gold
-
-seeds:
- aishwarya_dbt_practice:
-  +schema: bronze

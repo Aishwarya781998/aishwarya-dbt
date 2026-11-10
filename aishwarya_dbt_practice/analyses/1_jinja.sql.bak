@@ -1,0 +1,11 @@
+select
+    site_code,
+
+    {% for wo_type in ['PREVENTIVE', 'CORRECTIVE', 'INSPECTION'] %}
+    sum(case when work_order_type = '{{ wo_type }}' then total_cost else 0 end)
+        as {{ wo_type.lower() }}_cost
+    {% if not loop.last %},{% endif %}
+    {% endfor %}
+
+from {{ ref('fct_work_order') }}
+group by site_code
