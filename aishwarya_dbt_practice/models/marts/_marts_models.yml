@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: dim_site
+    description: "Site dimension - one row per site"
+    columns:
+      - name: site_code
+        tests:
+          - unique
+          - not_null
+      - name: division_name
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['WESTERN_DIVISION', 'EASTERN_DIVISION', 'UNKNOWN']
+
+  - name: dim_employee
+    description: "Employee dimension - one row per employee"
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+      - name: job_category
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['TECHNICIAN', 'MANAGEMENT', 'EXTERNAL', 'OTHER']
+
+  - name: dim_cart
+    description: "Cart dimension - one row per cart"
+    columns:
+      - name: cart_id
+        tests:
+          - unique
+          - not_null
+      - name: size_category
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['SMALL', 'MEDIUM', 'LARGE']
+
+  - name: fct_work_order
+    description: "Work order fact table - INCREMENTAL, merge on work_order_event_id"
+    columns:
+      - name: work_order_event_id
+        description: "Unique key used by the incremental merge"
+        tests:
+          - unique
+          - not_null
+      - name: site_code
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_site')
+                field: site_code
+      - name: employee_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_employee')
+                field: employee_id
+      - name: modified_at
+        description: "Drives incremental loading - must never be null"
+        tests:
+          - not_null
+      - name: cost_bucket
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['HIGH_COST', 'MEDIUM_COST', 'LOW_COST']

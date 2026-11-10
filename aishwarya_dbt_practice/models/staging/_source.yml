@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: operations_raw
+    database: DEV_LANDING
+    schema: OPERATIONS_RAW
+    tables:
+      - name: raw_site
+      - name: raw_employee
+      - name: raw_cart
+      - name: raw_work_order

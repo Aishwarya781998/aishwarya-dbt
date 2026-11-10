@@ -31,13 +31,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   aishwarya_dbt_practice:
-    # Config indicated by + and applies to all files under models/example/
-    bronze:
+
+    staging:
+      +materialized: view
+
+    intermediate:
+      +materialized: view
+
+    marts:
       +materialized: table
-      schema: bronze
-    silver:
-      +materialized: table
-      schema: silver  
-    gold:
-      +materialized: table
-      schema: gold

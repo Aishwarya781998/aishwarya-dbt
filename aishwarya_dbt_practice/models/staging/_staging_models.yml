@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_site
+    description: "Cleaned site data from the operations source system"
+    columns:
+      - name: site_code
+        description: "Unique site identifier"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_employee
+    description: "Cleaned employee data"
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_cart
+    description: "Cleaned cart/container data"
+    columns:
+      - name: cart_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_work_order
+    description: "Cleaned work order events with CDC columns"
+    columns:
+      - name: work_order_event_id
+        tests:
+          - unique
+          - not_null
+      - name: modified_at
+        description: "Drives incremental loading - must never be null"
+        tests:
+          - not_null

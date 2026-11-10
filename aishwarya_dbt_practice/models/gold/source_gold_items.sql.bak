@@ -1,0 +1,16 @@
+With dedup_query as (
+select *,
+ id, row_number().over(partition by id order by updated_Date desc)as dedup 
+ from 
+ {{source('source',Items)}}
+
+ where dedup = 1
+)
+
+select  ID,
+    NAME,
+    CATEGORY,
+    UPDATE_DATE
+ from 
+ dedup_query 
+ where dedup = 1
